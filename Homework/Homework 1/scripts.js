@@ -1,5 +1,5 @@
 console.log("hello");
-alert("hello SEDC");
+alert("hello SEDC this is homework from class 01");
 //Homework Task 1: price of 30 phoes + tax
 console.log("Homework Task 1: price of 30 phoes + tax")
 let numberOfPhones = 30;
