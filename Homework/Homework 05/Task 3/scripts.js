@@ -1,9 +1,10 @@
+//Homework Task 3:  recipe page from inputs
+console.log("Homework Task 3 - recipe page from inputs")
 
-// Function to create ingredient input fields based on user input
 document.getElementById('ingredientCount').addEventListener('input', function() {
     const count = parseInt(this.value);
     const ingredientInputs = document.getElementById('ingredientInputs');
-    ingredientInputs.innerHTML = ''; // Clear previous inputs
+    ingredientInputs.innerHTML = ''; 
 
     for (let i = 1; i <= count; i++) {
         const label = document.createElement('label');
@@ -18,19 +19,19 @@ document.getElementById('ingredientCount').addEventListener('input', function() 
     }
 });
 
-// Handle form submission
+
 document.getElementById('recipeForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting
+    event.preventDefault(); 
 
     const recipeName = document.getElementById('recipeName').value;
     const ingredientList = document.getElementById('ingredientList');
     const recipeTitle = document.getElementById('recipeTitle');
-    ingredientList.innerHTML = ''; // Clear previous ingredients
+    ingredientList.innerHTML = ''; 
 
-    // Print the recipe name
+   
     recipeTitle.textContent = recipeName;
 
-    // Collect ingredients and print them as a list
+   
     const count = parseInt(document.getElementById('ingredientCount').value);
     for (let i = 1; i <= count; i++) {
         const ingredient = document.getElementById(`ingredient${i}`).value;

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic table</title>
+    <link rel="stylesheet" href="style.css">
+    <style >
+     
+        
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid #241212;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a Dynamic Table</h1>
+    <label for="numRows">Number of Rows:</label>
+    <input type="number" id="numRows" min="1" required>
+    <br><br>
+    
+    <label for="numCols">Number of Columns:</label>
+    <input type="number" id="numCols" min="1" required>
+    <br><br>
+
+    <button id="createTable">Create Table</button>
+
+    <table id="dynamicTable"></table>
+
+    <script src="scripts.js">
+    
+    </script>
+</body>
+</html>
